@@ -73,10 +73,7 @@ class PdfsController extends Controller
         if (! Gate::allows('pdf_create')) {
             return abort(401);
         }
-        $pdfname = $request->file('file')->getClientOriginalName();
         $request = $this->saveFiles($request);
-        $request['name'] = $pdfname;
-        //dd($request->all());
         $pdf = Pdf::create($request->all());
 
 
@@ -209,25 +206,8 @@ class PdfsController extends Controller
             return abort(401);
         }
         $pdf = Pdf::onlyTrashed()->findOrFail($id);
-        unlink(public_path() . '/' . $pdf->file);
         $pdf->forceDelete();
 
         return redirect()->route('admin.pdfs.index');
     }
 }
-/*
-    public function destroy($id)
-    {
-        //
-
-        $post = Post::findOrFail($id);
-
-        unlink(public_path() . $post->photo->file);
-
-        $post->delete();
-
-        return redirect('/admin/posts');
-
-
-    }
-*/
