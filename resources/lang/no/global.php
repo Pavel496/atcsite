@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_file_contains_header_row' => 'Inneholder fila overskrift rad?',
 	'app_csvImport' => 'CSV import',
 	'app_csv_file_to_import' => 'CSV fil til importering',
@@ -246,5 +246,5 @@ return [
 	'app_not_approved_p' => 'Kontoen din er fortsatt ikke godkjent av administrator. Vennligst prøv igjen senere.',
 	'app_there_were_problems_with_input' => 'De oppsto problemer med inn-data',
 	'app_whoops' => 'Oups!',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

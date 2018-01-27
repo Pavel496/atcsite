@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Create1516462012PdfsTable extends Migration
+class Drop5a6c3c582810aPdfsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -11,6 +11,16 @@ class Create1516462012PdfsTable extends Migration
      * @return void
      */
     public function up()
+    {
+        Schema::dropIfExists('pdfs');
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
     {
         if(! Schema::hasTable('pdfs')) {
             Schema::create('pdfs', function (Blueprint $table) {
@@ -22,18 +32,8 @@ class Create1516462012PdfsTable extends Migration
                 $table->timestamps();
                 $table->softDeletes();
 
-                $table->index(['deleted_at']);
+            $table->index(['deleted_at']);
             });
         }
-    }
-
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('pdfs');
     }
 }

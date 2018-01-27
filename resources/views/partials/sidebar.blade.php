@@ -103,15 +103,6 @@
                 </ul>
             </li>
             @endcan
-            @can('pdf_access')
-            <li class="{{ $request->segment(2) == 'pdfs' ? 'active' : '' }}">
-                <a href="{{ route('admin.pdfs.index') }}">
-                    <i class="fa fa-gears"></i>
-                    <span class="title">@lang('global.pdf.title')</span>
-                </a>
-            </li>
-            @endcan
-            
 
             
 

@@ -53,11 +53,6 @@ class PermissionSeed extends Seeder
             ['id' => 38, 'title' => 'content_page_edit',],
             ['id' => 39, 'title' => 'content_page_view',],
             ['id' => 40, 'title' => 'content_page_delete',],
-            ['id' => 46, 'title' => 'pdf_access',],
-            ['id' => 47, 'title' => 'pdf_create',],
-            ['id' => 48, 'title' => 'pdf_edit',],
-            ['id' => 49, 'title' => 'pdf_view',],
-            ['id' => 50, 'title' => 'pdf_delete',],
 
         ];
 

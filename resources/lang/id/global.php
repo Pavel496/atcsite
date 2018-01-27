@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_create' => 'Buat',
 	'app_save' => 'Simpan',
 	'app_edit' => 'Edit',
@@ -181,5 +181,5 @@ return [
 	'app_email_greet' => 'Hai',
 	'app_confirm_password' => 'konfirmasi kata kunci',
 	'app_please_select' => 'Silahkan pilih',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

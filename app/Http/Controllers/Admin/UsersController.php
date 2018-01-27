@@ -18,9 +18,6 @@ class UsersController extends Controller
      */
     public function index()
     {
-        if (! Gate::allows('user_access')) {
-            return abort(401);
-        }
 
 
                 $users = User::all();
@@ -35,9 +32,6 @@ class UsersController extends Controller
      */
     public function create()
     {
-        if (! Gate::allows('user_create')) {
-            return abort(401);
-        }
         
         $roles = \App\Role::get()->pluck('title', 'id');
 
@@ -53,9 +47,6 @@ class UsersController extends Controller
      */
     public function store(StoreUsersRequest $request)
     {
-        if (! Gate::allows('user_create')) {
-            return abort(401);
-        }
         $user = User::create($request->all());
         $user->role()->sync(array_filter((array)$request->input('role')));
 
@@ -73,9 +64,6 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        if (! Gate::allows('user_edit')) {
-            return abort(401);
-        }
         
         $roles = \App\Role::get()->pluck('title', 'id');
 
@@ -94,9 +82,6 @@ class UsersController extends Controller
      */
     public function update(UpdateUsersRequest $request, $id)
     {
-        if (! Gate::allows('user_edit')) {
-            return abort(401);
-        }
         $user = User::findOrFail($id);
         $user->update($request->all());
         $user->role()->sync(array_filter((array)$request->input('role')));
@@ -115,16 +100,9 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        if (! Gate::allows('user_view')) {
-            return abort(401);
-        }
-        
-        $roles = \App\Role::get()->pluck('title', 'id');
-$pdfs = \App\Pdf::where('created_by_id', $id)->get();
-
         $user = User::findOrFail($id);
 
-        return view('admin.users.show', compact('user', 'pdfs'));
+        return view('admin.users.show', compact('user'));
     }
 
 
@@ -136,9 +114,6 @@ $pdfs = \App\Pdf::where('created_by_id', $id)->get();
      */
     public function destroy($id)
     {
-        if (! Gate::allows('user_delete')) {
-            return abort(401);
-        }
         $user = User::findOrFail($id);
         $user->delete();
 
@@ -152,9 +127,6 @@ $pdfs = \App\Pdf::where('created_by_id', $id)->get();
      */
     public function massDestroy(Request $request)
     {
-        if (! Gate::allows('user_delete')) {
-            return abort(401);
-        }
         if ($request->input('ids')) {
             $entries = User::whereIn('id', $request->input('ids'))->get();
 
