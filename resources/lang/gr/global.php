@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_create' => 'Δημιουργία',
 	'app_save' => 'Αποθήκευση',
 	'app_edit' => 'Επεξεργασία',
@@ -25,5 +25,5 @@ return [
 	'app_back_to_list' => 'Επιστροφή στην λίστα',
 	'app_dashboard' => 'Dashboard',
 	'app_delete' => 'Διαγραφή',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

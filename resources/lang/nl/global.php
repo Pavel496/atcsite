@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_create' => 'Toevoegen',
 	'app_save' => 'Opslaan',
 	'app_edit' => 'Bewerken',
@@ -239,5 +239,5 @@ return [
 	'app_stripe_transactions' => 'Stripe transacties',
 	'app_reset_password' => 'Wachtwoord reset',
 	'app_confirm_password' => 'Bevestig wachtwoord',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

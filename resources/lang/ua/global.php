@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_forgot_password' => 'Забули пароль?',
 	'app_login' => 'Увійти',
 	'app_change_password' => 'Змінити пароль',
@@ -238,5 +238,5 @@ return [
 	'app_x_axis_group_by' => 'Ось-Х групувати по',
 	'app_x_axis_field' => 'Поле Осі-Х (дата/час)',
 	'app_y_axis_field' => 'Поле осі-Y',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

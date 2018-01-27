@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_create' => 'Créer',
 	'app_save' => 'Enregistrer',
 	'app_edit' => 'Modifier',
@@ -235,5 +235,5 @@ return [
 	'app_csvImport' => 'Importer CSV.',
 	'app_csv_file_to_import' => 'Fichier CSV à importer.',
 	'app_parse_csv' => 'Analyser CSV.',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

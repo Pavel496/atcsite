@@ -35,10 +35,6 @@ Route::group(['middleware' => ['auth', 'approved'], 'prefix' => 'admin', 'as' =>
     Route::post('content_tags_mass_destroy', ['uses' => 'Admin\ContentTagsController@massDestroy', 'as' => 'content_tags.mass_destroy']);
     Route::resource('content_pages', 'Admin\ContentPagesController');
     Route::post('content_pages_mass_destroy', ['uses' => 'Admin\ContentPagesController@massDestroy', 'as' => 'content_pages.mass_destroy']);
-    Route::resource('pdfs', 'Admin\PdfsController');
-    Route::post('pdfs_mass_destroy', ['uses' => 'Admin\PdfsController@massDestroy', 'as' => 'pdfs.mass_destroy']);
-    Route::post('pdfs_restore/{id}', ['uses' => 'Admin\PdfsController@restore', 'as' => 'pdfs.restore']);
-    Route::delete('pdfs_perma_del/{id}', ['uses' => 'Admin\PdfsController@perma_del', 'as' => 'pdfs.perma_del']);
 
 
 

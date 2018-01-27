@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_country' => 'Maa',
 	'app_client_status' => 'Asiakkaan tila',
 	'app_clients' => 'Asiakkaat',
@@ -114,5 +114,5 @@ return [
 	'app_photo2' => 'Kuva 2',
 	'app_photo3' => 'Kuva 3',
 	'app_calendar' => 'Kalenteri',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_create' => 'Стварыць',
 	'app_save' => 'Захаваць',
 	'app_edit' => 'Рэдагаваць',
@@ -171,5 +171,5 @@ return [
 	'app_if_you_are_having_trouble' => 'Калі ў вас узніклі праблемы, націснуўшы на',
 	'app_copy_paste_url_bellow' => 'кнопку, скапіруйце і ўстаўце URL ніжэй у ваш вэб-браўзэр:',
 	'app_not_approved_title' => 'Ваш акаўнт не падцверджаны',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];

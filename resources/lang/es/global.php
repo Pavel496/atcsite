@@ -10,7 +10,7 @@ return [
 		'content-tags' => [		'title' => 'Tags',		'fields' => [			'title' => 'Tag',			'slug' => 'Slug',		],	],
 		'content-pages' => [		'title' => 'Pages',		'fields' => [			'title' => 'Title',			'category-id' => 'Categories',			'tag-id' => 'Tags',			'page-text' => 'Text',			'excerpt' => 'Excerpt',			'featured-image' => 'Featured image',		],	],
 		'messages' => [		'title' => 'Messages',		'fields' => [		],	],
-		'pdf' => [		'title' => 'Pdf',		'fields' => [			'name' => 'Name',			'information' => 'Information',			'file' => 'File',			'created-by' => 'Created by',		],	],
+		'pdf' => [		'title' => 'Pdf',		'fields' => [		],	],
 	'app_create' => 'Crear',
 	'app_save' => 'Guardar',
 	'app_edit' => 'Editar',
@@ -164,7 +164,7 @@ return [
 	'app_budget' => 'Presupuesto',
 	'app_currency' => 'Moneda',
 	'app_email_regards' => 'Saludos',
-	'app_import_data' => 'Importar dato',
+	'app_import_data' => 'Ma\'lumotlarni import qilish',
 	'app_faq_management' => 'Administración de Preguntas Frecuentes',
 	'app_administrator_can_create_other_users' => 'Administrador (puede crear otros usuarios)',
 	'app_simple_user' => 'Usuario Simple',
@@ -226,7 +226,7 @@ return [
 	'app_there_were_problems_with_input' => 'Hubo problemas con esta entrada',
 	'app_csvImport' => 'Importación CSV',
 	'app_csv_file_to_import' => 'Archivo CSV a importar',
-	'app_parse_csv' => 'Rasterizar CSV',
+	'app_parse_csv' => 'CSV ni o',
 	'app_imported_rows_to_table' => 'Importación de :rows líneas a la tabla :table',
 	'app_if_you_are_having_trouble' => 'Si estás teniendo problemas dale click a ',
 	'app_skype' => 'Skype',
@@ -245,5 +245,5 @@ return [
 	'app_stripe_transactions' => 'Transacciones con Stripe',
 	'app_email_line1' => 'Estás recibiendo este mensaje porque alguien solicitó restablecer la contraseña de esta cuenta.',
 	'app_email_line2' => 'Si no solicitado el restablecimiento de tu contraseña no es necesario que hagas nada.',
-	'global_title' => 'Сайт АУЦ',
+	'global_title' => 'ATC Site',
 ];
