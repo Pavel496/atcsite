@@ -60,7 +60,7 @@
 
                                 <td field-key='name'>{{ $pdf->name }}</td>
                                 <td field-key='information'>{!! $pdf->information !!}</td>
-                                <td field-key='file'>@if($pdf->file)<a href="{{ asset(env('UPLOAD_PATH').'/' . $pdf->file) }}" target="_blank">Просмотр файла</a>@endif</td>
+                                <td field-key='file'>@if($pdf->file)<a href="{{ asset(env('UPLOAD_PATH').'/' . $pdf->file) }}" target="_blank">Download file</a>@endif</td>
                                 <td field-key='created_by'>{{ $pdf->created_by->name or '' }}</td>
                                 @if( request('show_deleted') == 1 )
                                 <td>
